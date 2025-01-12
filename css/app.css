@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        
+    }
+}
+
+.card-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px;
+    
+}
+
+.card-list {
+    display: flex;
+    gap: 10px;
+    transition: 0.3s linear 0s;
+
+}
+
+.card-list .card-item {
+    transition: 0.3s linear 0s;
+}
+
+.card-list .card-item .card-link {
+    width: 350px;
+    margin: auto 10px;
+    background: #ffffff;
+    padding: 15px;
+    display: block;
+    border-radius: 10px;
+    text-decoration: none;
+    /* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1); */
+    border: 2px solid transparent;
+    transition: .3s linear 0s;
+}
+
+
+.card-list .card-item .card-link:hover {
+    border-color: #047ab4;
+}
+
+.card-link img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
+}
+
+.card-link .badge {
+    font-size: 13px;
+    color: #6a68d1;
+    background: #dad9ff;
+    font-weight: 300;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 12px 0 16px;
+    
+}
+.card-link .badge.designer {
+    color: #d910cf;
+    background: #f6e0f5;
+}
+
+.card-link .badge.marketing {
+    color: #0a8da4;
+    background: #dff0f3;
+}
+
+.card-link .badge.engineer {
+    color: #07a64f;
+    background: #dff3e8;
+}
+
+.card-link h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    line-height: 27px;
+}
+
+.card-link .card-btn {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #86b5db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #699fcb;
+    margin: 26px 0 5px;
+
+}
+
+.card-link .card-btn span {
+    transform: rotate(-45deg);
+    transition: .2s linear 0s;
+}
+
+.card-link .card-btn:hover span {
+    transform: rotate(-45deg) translateX(4px);
+}
+
+.arrow-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s linear 0s;
+    display: flex;
+}
+
+.arrow-btn button {
+    font-size: 19px;
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
